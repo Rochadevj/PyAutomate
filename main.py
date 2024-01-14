@@ -16,12 +16,11 @@ pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
 pyautogui.press("enter")
 time.sleep(1)
 
-
 # Passo 2: Fazer login
 
 # selecionar o campo de email
 pyautogui.click(x=466, y=392)
-# escrever o seu email
+# escrever o email
 pyautogui.write("henriquerocha1357@gmail.com")
 pyautogui.press("tab")  # passando pro próximo campo
 pyautogui.write("1234 ")
@@ -29,7 +28,6 @@ pyautogui.click(x=706, y=552)  # clique no botao de login
 time.sleep(4)
 
 # Passo 3: Importar a base de produtos pra cadastrar
-
 
 tabela = pd.read_csv("produtos.csv")
 
