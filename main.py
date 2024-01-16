@@ -1,6 +1,5 @@
 
 # Passo 1: Entrar no sistema da empresa
-
 import pyautogui
 import time
 import pandas as pd
