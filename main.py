@@ -4,7 +4,7 @@
 import pyautogui
 import time
 import pandas as pd
-pyautogui.PAUSE = 0.3
+pyautogui.PAUSE = 0.4
 
 # abrir o navegador (edge)
 pyautogui.press("win")
@@ -14,7 +14,7 @@ pyautogui.press("enter")
 # entrar no link
 pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
 pyautogui.press("enter")
-time.sleep(1)
+time.sleep(2)
 
 # Passo 2: Fazer login
 
@@ -25,7 +25,7 @@ pyautogui.write("henriquerocha1357@gmail.com")
 pyautogui.press("tab")  # passando pro próximo campo
 pyautogui.write("1234 ")
 pyautogui.click(x=706, y=552)  # clique no botao de login
-time.sleep(4)
+time.sleep(3)
 
 # Passo 3: Importar a base de produtos pra cadastrar
 
@@ -73,4 +73,4 @@ for linha in tabela.index:
     pyautogui.scroll(5000)
 
     # adicionar um atraso entre as iterações
-    time.sleep(0.5)
+    time.sleep(0.1)
